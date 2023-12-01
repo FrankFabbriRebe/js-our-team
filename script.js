@@ -39,11 +39,23 @@ const arrayTeamMembers = [
 
 ];
 
+const memberInfo = [];
+
 // print in console all the infos for each members
 for (let i = 0; i < arrayTeamMembers.length; i++) {
 
     for (let key in arrayTeamMembers[i]) {
-        console.log(arrayTeamMembers[i][key]);
+        let info = arrayTeamMembers[i][key];
+        // console.log(info);
+        memberInfo.push(info)
     }
 
 }
+
+console.log(memberInfo);
+
+// selection element
+const container = document.querySelector(".container");
+
+// print on the scree
+container.innerHTML = memberInfo;
