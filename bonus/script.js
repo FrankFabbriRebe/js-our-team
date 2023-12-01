@@ -45,7 +45,7 @@ const arrayNames = [];
 for (let i = 0; i < arrayTeamMembers.length; i++) {
    let name = arrayTeamMembers[i].nome;
    arrayNames.push(name);
-}
+};
 
 // array ruolo
 const arrayRuolo = [];
@@ -53,7 +53,14 @@ const arrayRuolo = [];
 for (let i = 0; i < arrayTeamMembers.length; i++) {
     let ruolo = arrayTeamMembers[i].ruolo;
     arrayRuolo.push(ruolo);
- }
+ };
 
- console.log(arrayRuolo);
- 
+// array foto
+const arrayFoto = [];
+
+for (let i = 0; i < arrayTeamMembers.length; i++) {
+    let foto = arrayTeamMembers[i].foto;
+    arrayFoto.push(foto);
+ };
+
+ console.log(arrayFoto);
