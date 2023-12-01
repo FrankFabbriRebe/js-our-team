@@ -47,3 +47,13 @@ for (let i = 0; i < arrayTeamMembers.length; i++) {
    arrayNames.push(name);
 }
 
+// array ruolo
+const arrayRuolo = [];
+
+for (let i = 0; i < arrayTeamMembers.length; i++) {
+    let ruolo = arrayTeamMembers[i].ruolo;
+    arrayRuolo.push(ruolo);
+ }
+
+ console.log(arrayRuolo);
+ 
