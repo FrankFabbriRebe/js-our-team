@@ -38,3 +38,12 @@ const arrayTeamMembers = [
     },
 
 ];
+
+// print in console all the infos for each members
+for (let i = 0; i < arrayTeamMembers.length; i++) {
+
+    for (let key in arrayTeamMembers[i]) {
+        console.log(arrayTeamMembers[i][key]);
+    }
+
+}
