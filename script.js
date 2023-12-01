@@ -52,10 +52,18 @@ for (let i = 0; i < arrayTeamMembers.length; i++) {
 
 }
 
-console.log(memberInfo);
+// console.log(memberInfo);
 
 // selection element
 const container = document.querySelector(".container");
 
+// create HTML content
+let htmlContent = "";
+
+// iterate through memberInfo and create HTML for each member
+for (let i = 0; i < memberInfo.length; i++) {
+    htmlContent += `<p>${memberInfo[i]}</p>`;
+}
+
 // print on the scree
-container.innerHTML = memberInfo;
+container.innerHTML = htmlContent;
